@@ -92,18 +92,30 @@ section {
                 }
 
                 & .information {
+                    border-radius: 30px;
+                    height: 35px;
+                    width: 120px;
+                    text-transform: uppercase;
+                    border: 2px solid #791fd3;
+                    background-color: #beff1b;
+                    color: #000;
+                    cursor: pointer;
+                    font-weight: bold;
 
                 }
             }
         }
 
     }
-}
 
-.arrows {
+    .arrows {
     & button {
         & img {
             width: 100px;
         }
     }
 }
+    
+
+}
+
