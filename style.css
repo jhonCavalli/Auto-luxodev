@@ -31,6 +31,7 @@ header {
         & ul {
             display: grid;
             grid-template-columns: repeat(3,200px);
+            cursor: pointer;
         }
 
     }
@@ -91,7 +92,7 @@ section {
                 }
 
                 & .information {
-                    
+
                 }
             }
         }
