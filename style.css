@@ -83,6 +83,7 @@ section {
                 & h2 {
                     font-size:  6rem;
                     line-height: 1em;
+                    font-family: "League Gothic", sans-serif;
                 }
 
                 & .description {
@@ -102,6 +103,7 @@ section {
                     color: #000;
                     cursor: pointer;
                     font-weight: bold;
+                    font-family: "League Gothic", sans-serif;
 
                 }
             }
@@ -166,6 +168,7 @@ section {
 
         & .number {
             font-size: 5em;
+            font-family: "League Gothic", sans-serif;
         }
 
         & ul {
