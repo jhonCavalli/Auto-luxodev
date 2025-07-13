@@ -109,6 +109,16 @@ section {
     }
 
     .arrows {
+        width: 70vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+
+
+
     & button {
         & img {
             width: 100px;
@@ -140,6 +150,11 @@ section {
             height: 5px;
             background-color: #beff1b;
             border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        & .active {
+            background-color: #fff;
         }
     }
 
