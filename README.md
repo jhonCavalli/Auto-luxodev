@@ -5,7 +5,8 @@ Site responsivo desenvolvido para apresentar veículos de forma moderna e atrati
 
 📸 Demonstração
 
-Adicione uma imagem do site acima se possível
+![Preview do Site](img/Captura%20de%20tela%202025-07-17%20235053.png)
+
 
 🔧 Tecnologias Utilizadas
 HTML5 — Estrutura semântica moderna
