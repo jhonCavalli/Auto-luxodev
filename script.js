@@ -37,9 +37,12 @@ nextButton.onclick = () => {
 
 
 prevButton.onclick = () => {
+
+    list.style.setProperty('--calculation', -1);
+    
     active = active - 1 < firstPosition ? lastPosition : active - 1;
     setSlider();
     items [active].classList.add('active');
 
-    list.style.setProperty('--calculation', -1);
+    
 }}
