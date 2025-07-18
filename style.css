@@ -357,35 +357,124 @@ section {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   section {
     height: auto;
-    padding-bottom: 150px; /* Para não sobrepor com footer e arrows */
+    padding-bottom: 200px;
+  }
+
+  section .list {
+    width: 90vw;
+    height: auto;
   }
 
   section .list .item {
-  position: relative;
-  inset: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  section .list .item .car-img {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  section .list .item .car-img img {
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+
+  section .list .item .content {
+    position: static;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  section .list .item .content h2 {
+    font-size: 2.5rem;
+  }
+
+  section .list .item .content .description {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  section .list .item .content .information {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .arrows {
+    position: static;
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .arrows button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .arrows button img {
+    width: 40px;
+  }
+
+  .indicators {
+    position: static;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .indicators .number {
+    font-size: 2rem;
+  }
+
+  footer.footer {
+    position: static;
+    margin-top: 40px;
+  }
+
+  header {
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header nav ul li {
+    text-align: center;
+  }
 }
-
-.arrows {
-  position: static;
-  margin-top: 20px;
-  justify-content: center;
-  gap: 40px;
-}
-
-.indicators {
-  position: static;
-  margin-top: 20px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-
-}
-
