@@ -19,7 +19,8 @@ nextButton.onclick = () => {
     let dotsOld = indicator.querySelector('.active');
     dotsOld.classList.remove('active');
     dots[active].classList.add('active');
-}
+
+    indicator.querySelector('.number').innerHTML = '0' + (active + 1);
 
 
 prevButton.onclick = () => {
@@ -28,4 +29,4 @@ prevButton.onclick = () => {
 
     active = active - 1 < firstPosition ? lastPosition : active - 1;
     items [active].classList.add('active');
-}
+}}
