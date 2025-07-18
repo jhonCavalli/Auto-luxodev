@@ -193,7 +193,7 @@ section {
 section {
 
     & .list {
---calculation: 1;
+    --calculation: 1;
 
         & .item {
             transform: translateX(calc(100vw * var(--calculation)));

@@ -4,6 +4,7 @@ let container = document.querySelector('.container');
 let items = document.querySelectorAll('.list .item');
 let indicator = document.querySelector('.indicators');
 let dots = indicator. querySelectorAll('ul li');
+let list = container.querySelector('.list');
 
 
 let active = 0;
@@ -25,6 +26,8 @@ function setSlider() {
 }
 
 nextButton.onclick = () => {
+
+    list.style.setProperty('--calculation', + 1);
     
     active = active + 1 > lastPosition ? 0 : active + 1;
     setSlider();
@@ -37,4 +40,6 @@ prevButton.onclick = () => {
     active = active - 1 < firstPosition ? lastPosition : active - 1;
     setSlider();
     items [active].classList.add('active');
+
+    list.style.setProperty('--calculation', -1);
 }}
